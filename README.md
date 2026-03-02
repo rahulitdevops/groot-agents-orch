@@ -57,7 +57,7 @@ WhatsApp → OpenClaw Gateway → Groot (Supervisor)
 - Node.js 18+
 - pnpm (`npm install -g pnpm`)
 - Redis (for caching/sessions)
-- [OpenClaw CLI](https://github.com/openclawai/openclaw) installed & configured
+- **OpenClaw Gateway:** See [OpenClaw documentation](https://github.com/openclawai/openclaw#installation) for installation and configuration of the OpenClaw CLI and WhatsApp integration setup
 
 ### Setup
 
@@ -101,9 +101,10 @@ pnpm dev  # Starts on http://localhost:3333
 
 ### Using via WhatsApp
 
-1. Configure OpenClaw with your WhatsApp account
-2. Send a message to the WhatsApp bot
-3. Groot receives it, routes to appropriate agent(s), returns results
+1. **Set up OpenClaw Gateway:** Follow the [OpenClaw WhatsApp integration guide](https://github.com/openclawai/openclaw#whatsapp-integration) to configure your WhatsApp account
+2. Ensure the OpenClaw gateway is running and connected to Groot API
+3. Send a message to the WhatsApp bot connected via OpenClaw
+4. Groot receives it, routes to appropriate agent(s), returns results
 
 ## 📁 Project Structure
 
@@ -217,19 +218,13 @@ NEXT_PUBLIC_API_URL=http://localhost:3333
 
 ### OpenClaw Gateway
 
-Configuration stored in `~/.openclaw/openclaw.json`:
-```json
-{
-  "gateway": {
-    "port": 18789,
-    "mode": "local",
-    "auth": {
-      "mode": "token",
-      "token": "..."
-    }
-  }
-}
-```
+The OpenClaw gateway configuration is stored in `~/.openclaw/openclaw.json`.
+
+For detailed configuration options and setup instructions, refer to the [OpenClaw configuration guide](https://github.com/openclawai/openclaw#configuration).
+
+**Key variables for Groot:**
+- `OPENCLAW_GATEWAY_URL` — Gateway WebSocket URL (typically `ws://127.0.0.1:18789`)
+- `OPENCLAW_GATEWAY_TOKEN` — Authentication token from OpenClaw config
 
 ## 📊 Monitoring & Observability
 
