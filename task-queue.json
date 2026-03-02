@@ -1,0 +1,93 @@
+[
+  {
+    "taskId": 50,
+    "agentId": "sre",
+    "description": "enhance the sre page make it more featuristic like self healing and advance alerts and monitoring metrics and section",
+    "status": "queued",
+    "createdAt": "2026-03-02T04:58:13.685Z"
+  },
+  {
+    "taskId": 58,
+    "agentId": "researcher",
+    "description": "Research top 3 AI coding tools in 2025 (Cursor, Windsurf, GitHub Copilot, Cline, etc). Compare: features, architecture, AI models used, strengths/weaknesses, pricing, what makes each great. Output a detailed comparison report.",
+    "status": "queued",
+    "createdAt": "2026-03-02T10:22:57.712Z"
+  },
+  {
+    "taskId": 59,
+    "agentId": "pm",
+    "description": "Based on Researcher output, write a feature spec for adding AI coding assistant capabilities to the Groot platform. Include: user stories, architecture proposal, MVP scope, tech stack decisions, integration points with existing dashboard/agents.",
+    "status": "queued",
+    "createdAt": "2026-03-02T10:22:57.716Z"
+  },
+  {
+    "taskId": 60,
+    "agentId": "builder",
+    "description": "Build a proof-of-concept implementation based on PM spec. Focus on MVP — core functionality that demonstrates the concept. Wire into existing Groot dashboard/API where applicable.",
+    "status": "queued",
+    "createdAt": "2026-03-02T10:22:57.718Z"
+  },
+  {
+    "taskId": 61,
+    "agentId": "qa",
+    "description": "End-to-end test the PoC implementation. Test all new endpoints, UI components, build verification, TypeScript checks. Deliver a clear pass/fail report with details.",
+    "status": "queued",
+    "createdAt": "2026-03-02T10:22:57.719Z"
+  },
+  {
+    "taskId": 65,
+    "agentId": "pm",
+    "description": "Write spec for: build a test feature",
+    "status": "queued",
+    "createdAt": "2026-03-02T10:55:27.012Z"
+  },
+  {
+    "taskId": 66,
+    "agentId": "builder",
+    "description": "build another feature",
+    "status": "queued",
+    "createdAt": "2026-03-02T10:55:45.317Z"
+  },
+  {
+    "taskId": 69,
+    "agentId": "researcher",
+    "description": "Research: Research the top 3 AI coding tools in 2025, then write a feature spec for adding similar capabilities to our platform, then build a proof-of-concept implementation, then QA test it and give me a pass/fail report.",
+    "status": "queued",
+    "createdAt": "2026-03-02T11:34:51.514Z"
+  },
+  {
+    "taskId": 70,
+    "agentId": "researcher",
+    "description": "Research top 5 modern landing page designs and UI trends in 2025. List key patterns, animations, and layouts.",
+    "status": "queued",
+    "createdAt": "2026-03-02T12:02:39.964Z"
+  },
+  {
+    "taskId": 71,
+    "agentId": "pm",
+    "description": "Write a brief product spec for a Groot landing page — sections, copy direction, CTA strategy, mobile-first layout.",
+    "status": "queued",
+    "createdAt": "2026-03-02T12:02:39.968Z"
+  },
+  {
+    "taskId": 72,
+    "agentId": "builder",
+    "description": "Build the landing page as a static HTML/Tailwind page based on PM spec. Dark theme, glassmorphism, responsive.",
+    "status": "queued",
+    "createdAt": "2026-03-02T12:02:39.973Z"
+  },
+  {
+    "taskId": 73,
+    "agentId": "qa",
+    "description": "Test the landing page — build verification, mobile responsiveness, accessibility check, lighthouse score. Pass/fail report.",
+    "status": "queued",
+    "createdAt": "2026-03-02T12:02:39.976Z"
+  },
+  {
+    "taskId": 74,
+    "agentId": "researcher",
+    "description": "Research top 5 modern landing page designs and UI trends in 2025. List key patterns, animations, and layouts.",
+    "status": "queued",
+    "createdAt": "2026-03-02T12:26:33.578Z"
+  }
+]

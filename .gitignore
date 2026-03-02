@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+.pnpm/
+pnpm-debug.log*
+*.lock
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Logs
+*.log
+/tmp/
+groot-server.log
+/output/sre/*
+/output/qa/*
+/output/pm/*
+
+# System
+.DS_Store
+.grund.pid
+*.pid
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+
+# Database (development only)
+db/groot.db
+db/groot.db-shm
+db/groot.db-wal
+
+# Temp files
+temp/
+tmp/
+*.tmp
+
+# Build cache
+tsconfig.tsbuildinfo
