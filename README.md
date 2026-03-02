@@ -1,6 +1,6 @@
 # Groot — Multi-Agent Orchestration System 🌱
 
-An intelligent personal AI agent army that runs on your local machine, accessible via WhatsApp through [OpenClaw](https://github.com/openclawai/openclaw) gateway. Groot supervises a team of specialized agents to handle complex tasks—from coding features to infrastructure monitoring to deep research.
+An intelligent personal AI agent army that runs on your local machine, accessible via WhatsApp through [OpenClaw](https://github.com/openclaw/openclaw) gateway. Groot supervises a team of specialized agents to handle complex tasks—from coding features to infrastructure monitoring to deep research.
 
 **Latest:** v2026.3.1 | **Status:** Active/Production | **Architecture Review:** [openclaw-groot-review.md](openclaw-groot-review.md)
 
@@ -57,7 +57,7 @@ WhatsApp → OpenClaw Gateway → Groot (Supervisor)
 - Node.js 18+
 - pnpm (`npm install -g pnpm`)
 - Redis (for caching/sessions)
-- **OpenClaw Gateway:** See [OpenClaw documentation](https://github.com/openclawai/openclaw#installation) for installation and configuration of the OpenClaw CLI and WhatsApp integration setup
+- **OpenClaw Gateway:** See [OpenClaw documentation](https://github.com/openclaw/openclaw#installation) for installation and configuration of the OpenClaw CLI and WhatsApp integration setup
 
 ### Setup
 
@@ -101,7 +101,7 @@ pnpm dev  # Starts on http://localhost:3333
 
 ### Using via WhatsApp
 
-1. **Set up OpenClaw Gateway:** Follow the [OpenClaw WhatsApp integration guide](https://github.com/openclawai/openclaw#whatsapp-integration) to configure your WhatsApp account
+1. **Set up OpenClaw Gateway:** Follow the [OpenClaw WhatsApp integration guide](https://github.com/openclaw/openclaw#whatsapp-integration) to configure your WhatsApp account
 2. Ensure the OpenClaw gateway is running and connected to Groot API
 3. Send a message to the WhatsApp bot connected via OpenClaw
 4. Groot receives it, routes to appropriate agent(s), returns results
@@ -220,7 +220,7 @@ NEXT_PUBLIC_API_URL=http://localhost:3333
 
 The OpenClaw gateway configuration is stored in `~/.openclaw/openclaw.json`.
 
-For detailed configuration options and setup instructions, refer to the [OpenClaw configuration guide](https://github.com/openclawai/openclaw#configuration).
+For detailed configuration options and setup instructions, refer to the [OpenClaw configuration guide](https://github.com/openclaw/openclaw#configuration).
 
 **Key variables for Groot:**
 - `OPENCLAW_GATEWAY_URL` — Gateway WebSocket URL (typically `ws://127.0.0.1:18789`)
