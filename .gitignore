@@ -10,19 +10,23 @@ build/
 .next/
 out/
 
-# Environment & secrets
+# Environment & secrets (NEVER COMMIT)
 .env
 .env.local
 .env.*.local
+.env.production
+.env.staging
 *.pem
+.secret
+secrets/
 
-# Logs
+# Logs (may contain tokens/sensitive data)
 *.log
 /tmp/
 groot-server.log
-/output/sre/*
-/output/qa/*
-/output/pm/*
+/output/sre/
+/output/qa/
+/output/pm/
 
 # System
 .DS_Store
@@ -37,6 +41,7 @@ Thumbs.db
 *.swo
 *~
 .vim/
+.claude/settings.local.json
 
 # Database (development only)
 db/groot.db

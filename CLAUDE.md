@@ -729,11 +729,9 @@ See `openclaw-groot-review.md` for detailed analysis.
 
 ## 📞 Contact & Support
 
-**Owner:** Rahul Das (@rahuldas)
-**Email:** rahul.itcloud@gmail.com
-**Phone:** +917042028777
-**WhatsApp:** Primary communication channel
-**Dashboard:** http://localhost:3333 (or http://100.109.168.87:3333 via Tailscale)
+**Owner:** Contact via WhatsApp (primary channel)
+**Dashboard:** http://localhost:3333 (local access only)
+**Remote Access:** Use Tailscale VPN for remote connectivity
 **Timezone:** IST (Asia/Kolkata)
 
 **For emergencies:** See `EMERGENCY-FIX.md`

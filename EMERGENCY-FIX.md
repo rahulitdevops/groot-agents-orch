@@ -83,7 +83,7 @@ Key fields that MUST be correct:
   "bind": "loopback",
   "auth": {
     "mode": "token",
-    "token": "03683b69e5ff9a58087ed0d17c9812b1fa60e32a6315b529"
+    "token": "<OPENCLAW_GATEWAY_TOKEN from .env>"
   }
 }
 ```
@@ -121,7 +121,6 @@ launchctl kickstart -k gui/$(id -u)/com.groot.dashboard
 tailscale up
 tailscale status
 ```
-MacBook IP: `100.109.168.87`
 
 ### Step 8: Nuclear option (full reset)
 ```bash
@@ -146,7 +145,7 @@ This re-runs setup wizard. Keep existing config when asked.
 | API logs | `/tmp/groot-api.log` |
 | Gateway LaunchAgent | `~/Library/LaunchAgents/ai.openclaw.gateway.plist` |
 | Dashboard LaunchAgent | `~/Library/LaunchAgents/com.groot.dashboard.plist` |
-| Claude CLI | `~/.local/bin/claude` (v2.1.63) |
+| Claude CLI | `~/.local/bin/claude` |
 
 ## Services (LaunchAgents)
 
@@ -182,8 +181,8 @@ claude                               # interactive
 - ❌ Run `npm install` in groot/api — use `pnpm`
 - ❌ Kill the LaunchAgent plist — use `openclaw gateway stop`
 
-## Das's Info
-- Phone: +917042028777
-- WhatsApp: primary channel
+## Owner's Info
+- WhatsApp: primary communication channel
 - Model: anthropic/claude-opus-4-6
-- Dashboard: http://localhost:3333 (or http://100.109.168.87:3333 via Tailscale)
+- Dashboard: http://localhost:3333 (local access)
+- Note: For remote access, use Tailscale VPN

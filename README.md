@@ -311,10 +311,9 @@ This is Rahul's personal project, but contributions are welcome!
 
 ## 📞 Contact
 
-- **Owner:** Rahul Das
-- **Email:** rahul.itcloud@gmail.com
-- **WhatsApp:** Primary communication channel
+- **Communication:** WhatsApp (primary channel)
 - **Timezone:** IST (Asia/Kolkata)
+- **For Issues:** Open a GitHub issue in the repository
 
 ## 📜 License
 

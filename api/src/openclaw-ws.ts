@@ -6,8 +6,15 @@ import db from './db.js';
 import { publishEvent } from './redis.js';
 import { calculateCost } from './cost.js';
 
-const GATEWAY_URL = process.env.OPENCLAW_GATEWAY_URL || 'ws://127.0.0.1:18789';
-const GATEWAY_TOKEN = process.env.OPENCLAW_GATEWAY_TOKEN || '03683b69e5ff9a58087ed0d17c9812b1fa60e32a6315b529';
+const GATEWAY_URL = process.env.OPENCLAW_GATEWAY_URL;
+const GATEWAY_TOKEN = process.env.OPENCLAW_GATEWAY_TOKEN;
+
+if (!GATEWAY_URL) {
+  throw new Error('OPENCLAW_GATEWAY_URL environment variable is required');
+}
+if (!GATEWAY_TOKEN) {
+  throw new Error('OPENCLAW_GATEWAY_TOKEN environment variable is required');
+}
 
 const AGENT_PREFIX_MAP: Record<string, string> = {
   builder: 'builder',
